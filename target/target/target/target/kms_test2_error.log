@@ -1,0 +1,720 @@
+2016/07/04 19:38:52 [debug] 38#0: epoll add event: fd:8 op:1 ev:00002001
+2016/07/04 19:38:52 [debug] 38#0: accept on 0.0.0.0:1989, ready: 0
+2016/07/04 19:38:52 [debug] 38#0: posix_memalign: 00005648A33711E0:256 @16
+2016/07/04 19:38:52 [debug] 38#0: *1 accept: 127.0.0.1:36241 fd:10
+2016/07/04 19:38:52 [debug] 38#0: posix_memalign: 00005648A33A7320:256 @16
+2016/07/04 19:38:52 [debug] 38#0: *1 event timer add: 10: 60000:1467661192369
+2016/07/04 19:38:52 [debug] 38#0: *1 reusable connection: 1
+2016/07/04 19:38:52 [debug] 38#0: *1 epoll add event: fd:10 op:1 ev:80002001
+2016/07/04 19:38:52 [debug] 38#0: *1 http wait request handler
+2016/07/04 19:38:52 [debug] 38#0: *1 malloc: 00005648A33A6DC0:1024
+2016/07/04 19:38:52 [debug] 38#0: *1 recv: fd:10 81 of 1024
+2016/07/04 19:38:52 [debug] 38#0: *1 reusable connection: 0
+2016/07/04 19:38:52 [debug] 38#0: *1 posix_memalign: 00005648A33ADA60:4096 @16
+2016/07/04 19:38:52 [debug] 38#0: *1 http process request line
+2016/07/04 19:38:52 [debug] 38#0: *1 http request line: "GET /test-with-iam HTTP/1.1"
+2016/07/04 19:38:52 [debug] 38#0: *1 http uri: "/test-with-iam"
+2016/07/04 19:38:52 [debug] 38#0: *1 http args: ""
+2016/07/04 19:38:52 [debug] 38#0: *1 http exten: ""
+2016/07/04 19:38:52 [debug] 38#0: *1 posix_memalign: 00005648A33AEA80:4096 @16
+2016/07/04 19:38:52 [debug] 38#0: *1 http process request header line
+2016/07/04 19:38:52 [debug] 38#0: *1 http header: "Host: localhost"
+2016/07/04 19:38:52 [debug] 38#0: *1 http header: "Connection: close"
+2016/07/04 19:38:52 [debug] 38#0: *1 http header: "X-Test: test"
+2016/07/04 19:38:52 [debug] 38#0: *1 http header done
+2016/07/04 19:38:52 [debug] 38#0: *1 event timer del: 10: 1467661192369
+2016/07/04 19:38:52 [debug] 38#0: *1 generic phase: 0
+2016/07/04 19:38:52 [debug] 38#0: *1 rewrite phase: 1
+2016/07/04 19:38:52 [debug] 38#0: *1 rewrite phase: 2
+2016/07/04 19:38:52 [debug] 38#0: *1 test location: "/"
+2016/07/04 19:38:52 [debug] 38#0: *1 test location: "latest/meta-data/iam/security-credentials/test-iam-user"
+2016/07/04 19:38:52 [debug] 38#0: *1 test location: "test-with-iam"
+2016/07/04 19:38:52 [debug] 38#0: *1 using configuration "/test-with-iam"
+2016/07/04 19:38:52 [debug] 38#0: *1 http cl:-1 max:31457280
+2016/07/04 19:38:52 [debug] 38#0: *1 rewrite phase: 4
+2016/07/04 19:38:52 [debug] 38#0: *1 rewrite phase: 5
+2016/07/04 19:38:52 [debug] 38#0: *1 rewrite phase: 6
+2016/07/04 19:38:52 [debug] 38#0: *1 http script value: "us-east-1"
+2016/07/04 19:38:52 [debug] 38#0: *1 http script set $aws_region
+2016/07/04 19:38:52 [debug] 38#0: *1 http script value: "kms"
+2016/07/04 19:38:52 [debug] 38#0: *1 http script set $aws_service
+2016/07/04 19:38:52 [debug] 38#0: *1 post rewrite phase: 7
+2016/07/04 19:38:52 [debug] 38#0: *1 generic phase: 8
+2016/07/04 19:38:52 [debug] 38#0: *1 generic phase: 9
+2016/07/04 19:38:52 [debug] 38#0: *1 generic phase: 10
+2016/07/04 19:38:52 [debug] 38#0: *1 generic phase: 11
+2016/07/04 19:38:52 [debug] 38#0: *1 access phase: 12
+2016/07/04 19:38:52 [debug] 38#0: *1 access phase: 13
+2016/07/04 19:38:52 [debug] 38#0: *1 access phase: 14
+2016/07/04 19:38:52 [debug] 38#0: *1 post access phase: 15
+2016/07/04 19:38:52 [debug] 38#0: *1 lua content handler, uri:"/test-with-iam" c:1
+2016/07/04 19:38:52 [debug] 38#0: *1 lua reset ctx
+2016/07/04 19:38:52 [debug] 38#0: *1 lua creating new thread
+2016/07/04 19:38:52 [debug] 38#0: *1 http cleanup add: 00005648A33AE950
+2016/07/04 19:38:52 [debug] 38#0: *1 lua run thread, top:0 c:1
+2016/07/04 19:38:52 [debug] 38#0: *1 [lua] AwsService.lua:103: new(): AwsService() supercls=true
+2016/07/04 19:38:52 [debug] 38#0: *1 [lua] KmsService.lua:20: new(): KmsService() o=table: 0x40746f18
+2016/07/04 19:38:52 [debug] 38#0: *1 [lua] AwsService.lua:115: constructor(): AwsService() constructor 
+2016/07/04 19:38:52 [debug] 38#0: *1 [lua] AwsService.lua:117: constructor(): init object=, aws_conn_keepalive=60000, aws_service=kms, security_credentials_host=127.0.0.1, aws_region=us-east-1, aws_conn_pool=100, aws_service_name=TrentService, aws_debug=true, security_credentials_port=1989
+2016/07/04 19:38:52 [debug] 38#0: *1 [lua] AwsService.lua:149: getCredentialsProvider(): Missing 'aws_credentials' init option; will try to guess one.
+2016/07/04 19:38:52 [debug] 38#0: *1 [lua] AwsService.lua:158: getCredentialsProvider(): Using AWSIAMCredentials as 'aws_access_key' or 'aws_secret_key' were not provided.
+2016/07/04 19:38:52 [debug] 38#0: *1 [lua] AwsService.lua:168: getCredentialsProvider(): Initializing 'api-gateway.aws.AWSIAMCredentials' credentials provider for aws service=kms
+2016/07/04 19:38:52 [debug] 38#0: *1 [lua] AwsService.lua:53: loadrequire(): Loading module [api-gateway.aws.AWSIAMCredentials]
+2016/07/04 19:38:52 [debug] 38#0: *1 [lua] AWSIAMCredentials.lua:83: new(): Initializing AWSIAMCredentials with object:, provider=api-gateway.aws.AWSIAMCredentials, security_credentials_host=127.0.0.1, security_credentials_port=1989
+2016/07/04 19:38:52 [debug] 38#0: *1 [lua] AwsService.lua:174: getCredentialsProvider(): Initialized security provider 'api-gateway.aws.AWSIAMCredentials' with options:, provider=api-gateway.aws.AWSIAMCredentials, security_credentials_host=127.0.0.1, security_credentials_port=1989
+2016/07/04 19:38:52 [debug] 38#0: *1 [lua] AWSIAMCredentials.lua:176: getSecurityCredentials(): Obtaining a new token as the cache is empty.
+2016/07/04 19:38:52 [warn] 38#0: *1 [lua] AWSIAMCredentials.lua:131: getIamUser(): No iam_user provided. To improve performance please define one to avoid extra round trips to AWS, client: 127.0.0.1, server: localhost, request: "GET /test-with-iam HTTP/1.1", host: "localhost"
+2016/07/04 19:38:52 [debug] 38#0: *1 [lua] AWSIAMCredentials.lua:104: fetchIamUser(): Fetching IAM User from:127.0.0.1:1989/latest/meta-data/iam/security-credentials/
+2016/07/04 19:38:52 [debug] 38#0: *1 [lua] http.lua:30: debug(): HttpClient.Http: initiating request to:127.0.0.11989
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket pool get keepalive peer
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket keepalive connection pool not found
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket connect timeout: 60000
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket network address given directly
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket resolve retval handler
+2016/07/04 19:38:52 [debug] 38#0: *1 socket 11
+2016/07/04 19:38:52 [debug] 38#0: *1 epoll add connection: fd:11 ev:80002005
+2016/07/04 19:38:52 [debug] 38#0: *1 connect to 127.0.0.1:1989, fd:11 #2
+2016/07/04 19:38:52 [debug] 38#0: *1 http cleanup add: 00005648A33AEA00
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket connect: -2
+2016/07/04 19:38:52 [debug] 38#0: *1 posix_memalign: 00005648A3371300:128 @16
+2016/07/04 19:38:52 [debug] 38#0: *1 event timer add: 11: 60000:1467661192369
+2016/07/04 19:38:52 [debug] 38#0: *1 lua resume returned 1
+2016/07/04 19:38:52 [debug] 38#0: *1 lua thread yielded
+2016/07/04 19:38:52 [debug] 38#0: *1 http finalize request: -4, "/test-with-iam?" a:1, c:2
+2016/07/04 19:38:52 [debug] 38#0: *1 http request count:2 blk:0
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket handler for "/test-with-iam?", wev 1
+2016/07/04 19:38:52 [debug] 38#0: *1 event timer del: 11: 1467661192369
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket connected
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket waking up the current request (conn)
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp operation done, resuming lua thread
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket calling prepare retvals handler 00005648A20BE5F0, u:000000004073AAE8
+2016/07/04 19:38:52 [debug] 38#0: *1 lua run thread, top:0 c:1
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket send timeout: 60000
+2016/07/04 19:38:52 [debug] 38#0: *1 lua allocate new chainlink and new buf of size 164, cl:00005648A33AEA18
+2016/07/04 19:38:52 [debug] 38#0: *1 lua socket tcp_nodelay
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket send data
+2016/07/04 19:38:52 [debug] 38#0: *1 send: fd:11 164 of 164
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket sent all the data
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket calling receiveuntil() method
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket receiveuntil iterator
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket read timeout: 60000
+2016/07/04 19:38:52 [debug] 38#0: *1 lua allocate new chainlink and new buf of size 4096, cl:00005648A33AEA28
+2016/07/04 19:38:52 [debug] 38#0: *1 malloc: 00005648A33AFAA0:4096
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket read data: wait:0
+2016/07/04 19:38:52 [debug] 38#0: *1 event timer add: 11: 60000:1467661192373
+2016/07/04 19:38:52 [debug] 38#0: *1 lua resume returned 1
+2016/07/04 19:38:52 [debug] 38#0: *1 lua thread yielded
+2016/07/04 19:38:52 [debug] 38#0: *1 lua run thread returned -2
+2016/07/04 19:38:52 [debug] 38#0: accept on 0.0.0.0:1989, ready: 0
+2016/07/04 19:38:52 [debug] 38#0: posix_memalign: 00005648A33B0AC0:256 @16
+2016/07/04 19:38:52 [debug] 38#0: *3 accept: 127.0.0.1:36242 fd:12
+2016/07/04 19:38:52 [debug] 38#0: posix_memalign: 00005648A33B0BE0:256 @16
+2016/07/04 19:38:52 [debug] 38#0: *3 event timer add: 12: 60000:1467661192373
+2016/07/04 19:38:52 [debug] 38#0: *3 reusable connection: 1
+2016/07/04 19:38:52 [debug] 38#0: *3 epoll add event: fd:12 op:1 ev:80002001
+2016/07/04 19:38:52 [debug] 38#0: *3 http wait request handler
+2016/07/04 19:38:52 [debug] 38#0: *3 malloc: 00005648A33B0D00:1024
+2016/07/04 19:38:52 [debug] 38#0: *3 recv: fd:12 164 of 1024
+2016/07/04 19:38:52 [debug] 38#0: *3 reusable connection: 0
+2016/07/04 19:38:52 [debug] 38#0: *3 posix_memalign: 00005648A33B1120:4096 @16
+2016/07/04 19:38:52 [debug] 38#0: *3 http process request line
+2016/07/04 19:38:52 [debug] 38#0: *3 http request line: "GET /latest/meta-data/iam/security-credentials/ HTTP/1.1"
+2016/07/04 19:38:52 [debug] 38#0: *3 http uri: "/latest/meta-data/iam/security-credentials/"
+2016/07/04 19:38:52 [debug] 38#0: *3 http args: ""
+2016/07/04 19:38:52 [debug] 38#0: *3 http exten: ""
+2016/07/04 19:38:52 [debug] 38#0: *3 posix_memalign: 00005648A33B2140:4096 @16
+2016/07/04 19:38:52 [debug] 38#0: *3 http process request header line
+2016/07/04 19:38:52 [debug] 38#0: *3 http header: "user-agent: api-gateway.aws.httpclient.http/0.2"
+2016/07/04 19:38:52 [debug] 38#0: *3 http header: "te: trailers"
+2016/07/04 19:38:52 [debug] 38#0: *3 http header: "connection: keep-alive"
+2016/07/04 19:38:52 [debug] 38#0: *3 http header: "host: 127.0.0.1"
+2016/07/04 19:38:52 [debug] 38#0: *3 http header done
+2016/07/04 19:38:52 [debug] 38#0: *3 event timer del: 12: 1467661192373
+2016/07/04 19:38:52 [debug] 38#0: *3 generic phase: 0
+2016/07/04 19:38:52 [debug] 38#0: *3 rewrite phase: 1
+2016/07/04 19:38:52 [debug] 38#0: *3 rewrite phase: 2
+2016/07/04 19:38:52 [debug] 38#0: *3 test location: "/"
+2016/07/04 19:38:52 [debug] 38#0: *3 test location: "latest/meta-data/iam/security-credentials/test-iam-user"
+2016/07/04 19:38:52 [debug] 38#0: *3 test location: "latest/meta-data/iam/security-credentials/"
+2016/07/04 19:38:52 [debug] 38#0: *3 using configuration "=/latest/meta-data/iam/security-credentials/"
+2016/07/04 19:38:52 [debug] 38#0: *3 http cl:-1 max:31457280
+2016/07/04 19:38:52 [debug] 38#0: *3 rewrite phase: 4
+2016/07/04 19:38:52 [debug] 38#0: *3 rewrite phase: 5
+2016/07/04 19:38:52 [debug] 38#0: *3 rewrite phase: 6
+2016/07/04 19:38:52 [debug] 38#0: *3 http set discard body
+2016/07/04 19:38:52 [debug] 38#0: *3 lua capture header filter, uri "/latest/meta-data/iam/security-credentials/"
+2016/07/04 19:38:52 [debug] 38#0: *3 HTTP/1.1 200 OK
+Server: openresty/1.9.7.3
+Date: Mon, 04 Jul 2016 19:38:52 GMT
+Content-Type: text/plain
+Content-Length: 13
+Connection: keep-alive
+
+2016/07/04 19:38:52 [debug] 38#0: *3 write new buf t:1 f:0 00005648A33B1F20, pos 00005648A33B1F20, size: 153 file: 0, size: 0
+2016/07/04 19:38:52 [debug] 38#0: *3 http write filter: l:0 f:0 s:153
+2016/07/04 19:38:52 [debug] 38#0: *3 http output filter "/latest/meta-data/iam/security-credentials/?"
+2016/07/04 19:38:52 [debug] 38#0: *3 http copy filter: "/latest/meta-data/iam/security-credentials/?"
+2016/07/04 19:38:52 [debug] 38#0: *3 lua capture body filter, uri "/latest/meta-data/iam/security-credentials/"
+2016/07/04 19:38:52 [debug] 38#0: *3 http postpone filter "/latest/meta-data/iam/security-credentials/?" 00007FFCC7FF52C0
+2016/07/04 19:38:52 [debug] 38#0: *3 write old buf t:1 f:0 00005648A33B1F20, pos 00005648A33B1F20, size: 153 file: 0, size: 0
+2016/07/04 19:38:52 [debug] 38#0: *3 write new buf t:0 f:0 0000000000000000, pos 00005648A337F5E3, size: 13 file: 0, size: 0
+2016/07/04 19:38:52 [debug] 38#0: *3 http write filter: l:1 f:0 s:166
+2016/07/04 19:38:52 [debug] 38#0: *3 http write filter limit 0
+2016/07/04 19:38:52 [debug] 38#0: *3 writev: 166 of 166
+2016/07/04 19:38:52 [debug] 38#0: *3 http write filter 0000000000000000
+2016/07/04 19:38:52 [debug] 38#0: *3 http copy filter: 0 "/latest/meta-data/iam/security-credentials/?"
+2016/07/04 19:38:52 [debug] 38#0: *3 http finalize request: 0, "/latest/meta-data/iam/security-credentials/?" a:1, c:1
+2016/07/04 19:38:52 [debug] 38#0: *3 set http keepalive handler
+2016/07/04 19:38:52 [debug] 38#0: *3 http close request
+2016/07/04 19:38:52 [debug] 38#0: *3 http log handler
+2016/07/04 19:38:52 [debug] 38#0: *3 free: 00005648A33B1120, unused: 14
+2016/07/04 19:38:52 [debug] 38#0: *3 free: 00005648A33B2140, unused: 3104
+2016/07/04 19:38:52 [debug] 38#0: *3 free: 00005648A33B0D00
+2016/07/04 19:38:52 [debug] 38#0: *3 hc free: 0000000000000000 0
+2016/07/04 19:38:52 [debug] 38#0: *3 hc busy: 0000000000000000 0
+2016/07/04 19:38:52 [debug] 38#0: *3 tcp_nodelay
+2016/07/04 19:38:52 [debug] 38#0: *3 reusable connection: 1
+2016/07/04 19:38:52 [debug] 38#0: *3 event timer add: 12: 68000:1467661200373
+2016/07/04 19:38:52 [debug] 38#0: *3 post event 00005648A33AAB40
+2016/07/04 19:38:52 [debug] 38#0: *3 delete posted event 00005648A33AAB40
+2016/07/04 19:38:52 [debug] 38#0: *3 http keepalive handler
+2016/07/04 19:38:52 [debug] 38#0: *3 malloc: 00005648A33B0D00:1024
+2016/07/04 19:38:52 [debug] 38#0: *3 recv: fd:12 -1 of 1024
+2016/07/04 19:38:52 [debug] 38#0: *3 recv() not ready (11: Resource temporarily unavailable)
+2016/07/04 19:38:52 [debug] 38#0: *3 free: 00005648A33B0D00
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket handler for "/test-with-iam?", wev 0
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket read handler
+2016/07/04 19:38:52 [debug] 38#0: *1 event timer del: 11: 1467661192373
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket read data: wait:1
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket try to recv data 4096: "/test-with-iam?"
+2016/07/04 19:38:52 [debug] 38#0: *1 recv: fd:11 166 of 4096
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket recv returned 166: "/test-with-iam?"
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket read until
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket receive done: wait:1, eof:0, uri:"/test-with-iam?"
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket waking up the current request (read)
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp operation done, resuming lua thread
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket calling prepare retvals handler 00005648A20BE6A0, u:000000004073AAE8
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket receive return value handler
+2016/07/04 19:38:52 [debug] 38#0: *1 lua run thread, top:0 c:1
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket calling receive() method
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket read timeout: 60000
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket read data: wait:0
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket read line
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket read the final line part: "Server: openresty/1.9.7.3"
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket receive done: wait:0, eof:0, uri:"/test-with-iam?"
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket receive done in a single run
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket receive return value handler
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket calling receive() method
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket read timeout: 60000
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket read data: wait:0
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket read line
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket read the final line part: "Date: Mon, 04 Jul 2016 19:38:52 GMT"
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket receive done: wait:0, eof:0, uri:"/test-with-iam?"
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket receive done in a single run
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket receive return value handler
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket calling receive() method
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket read timeout: 60000
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket read data: wait:0
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket read line
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket read the final line part: "Content-Type: text/plain"
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket receive done: wait:0, eof:0, uri:"/test-with-iam?"
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket receive done in a single run
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket receive return value handler
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket calling receive() method
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket read timeout: 60000
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket read data: wait:0
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket read line
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket read the final line part: "Content-Length: 13"
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket receive done: wait:0, eof:0, uri:"/test-with-iam?"
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket receive done in a single run
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket receive return value handler
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket calling receive() method
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket read timeout: 60000
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket read data: wait:0
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket read line
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket read the final line part: "Connection: keep-alive"
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket receive done: wait:0, eof:0, uri:"/test-with-iam?"
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket receive done in a single run
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket receive return value handler
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket calling receive() method
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket read timeout: 60000
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket read data: wait:0
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket read line
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket read the final line part: ""
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket receive done: wait:0, eof:0, uri:"/test-with-iam?"
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket receive done in a single run
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket receive return value handler
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket calling receive() method
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket read timeout: 60000
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket read data: wait:0
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket read chunk 13
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket receive done: wait:0, eof:0, uri:"/test-with-iam?"
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket receive done in a single run
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket receive return value handler
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket set keepalive: saving connection 00005648A336DD70
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket connection pool size: 50
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket keepalive create connection pool for key "127.0.0.1:1989"
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket clear current socket connection
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket keepalive timeout: 30000 ms
+2016/07/04 19:38:52 [debug] 38#0: *1 event timer add: 11: 30000:1467661162373
+2016/07/04 19:38:52 [debug] 38#0: *1 lua finalize socket
+2016/07/04 19:38:52 [debug] 38#0: *1 lua http cleanup free: 00005648A33AEA00
+2016/07/04 19:38:52 [debug] 38#0: *1 [lua] AWSIAMCredentials.lua:119: fetchIamUser(): found user:test-iam-user
+2016/07/04 19:38:52 [debug] 38#0: *1 [lua] http.lua:30: debug(): HttpClient.Http: initiating request to:127.0.0.11989
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket pool get keepalive peer
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket get keepalive peer: using connection 00005648A336DD70, fd:11
+2016/07/04 19:38:52 [debug] 38#0: *1 event timer del: 11: 1467661162373
+2016/07/04 19:38:52 [debug] 38#0: *1 lua http cleanup reuse: 00005648A33AEA00
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket send timeout: 60000
+2016/07/04 19:38:52 [debug] 38#0: *1 lua reuse free buf chain, but reallocate memory because 199 >= 164, cl:00005648A33AEA18, p:00005648A33AEEB0
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket send data
+2016/07/04 19:38:52 [debug] 38#0: *1 send: fd:11 199 of 199
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket sent all the data
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket calling receiveuntil() method
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket receiveuntil iterator
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket read timeout: 60000
+2016/07/04 19:38:52 [debug] 38#0: *1 lua reuse free buf memory 4096 >= 4096, cl:00005648A33AEA28, p:00005648A33AFAA0
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket read data: wait:0
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket try to recv data 4096: "/test-with-iam?"
+2016/07/04 19:38:52 [debug] 38#0: *1 recv: fd:11 -1 of 4096
+2016/07/04 19:38:52 [debug] 38#0: *1 recv() not ready (11: Resource temporarily unavailable)
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket recv returned -2: "/test-with-iam?"
+2016/07/04 19:38:52 [debug] 38#0: *1 event timer add: 11: 60000:1467661192373
+2016/07/04 19:38:52 [debug] 38#0: *1 lua resume returned 1
+2016/07/04 19:38:52 [debug] 38#0: *1 lua thread yielded
+2016/07/04 19:38:52 [debug] 38#0: *1 lua run thread returned -2
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket handler for "/test-with-iam?", wev 1
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket dummy handler
+2016/07/04 19:38:52 [debug] 38#0: *3 http keepalive handler
+2016/07/04 19:38:52 [debug] 38#0: *3 malloc: 00005648A33B0D00:1024
+2016/07/04 19:38:52 [debug] 38#0: *3 recv: fd:12 199 of 1024
+2016/07/04 19:38:52 [debug] 38#0: *3 reusable connection: 0
+2016/07/04 19:38:52 [debug] 38#0: *3 posix_memalign: 00005648A33B1120:4096 @16
+2016/07/04 19:38:52 [debug] 38#0: *3 event timer del: 12: 1467661200373
+2016/07/04 19:38:52 [debug] 38#0: *3 http process request line
+2016/07/04 19:38:52 [debug] 38#0: *3 http request line: "GET /latest/meta-data/iam/security-credentials/test-iam-user?DurationSeconds=86400 HTTP/1.1"
+2016/07/04 19:38:52 [debug] 38#0: *3 http uri: "/latest/meta-data/iam/security-credentials/test-iam-user"
+2016/07/04 19:38:52 [debug] 38#0: *3 http args: "DurationSeconds=86400"
+2016/07/04 19:38:52 [debug] 38#0: *3 http exten: ""
+2016/07/04 19:38:52 [debug] 38#0: *3 posix_memalign: 00005648A33B2140:4096 @16
+2016/07/04 19:38:52 [debug] 38#0: *3 http process request header line
+2016/07/04 19:38:52 [debug] 38#0: *3 http header: "user-agent: api-gateway.aws.httpclient.http/0.2"
+2016/07/04 19:38:52 [debug] 38#0: *3 http header: "te: trailers"
+2016/07/04 19:38:52 [debug] 38#0: *3 http header: "connection: keep-alive"
+2016/07/04 19:38:52 [debug] 38#0: *3 http header: "host: 127.0.0.1"
+2016/07/04 19:38:52 [debug] 38#0: *3 http header done
+2016/07/04 19:38:52 [debug] 38#0: *3 generic phase: 0
+2016/07/04 19:38:52 [debug] 38#0: *3 rewrite phase: 1
+2016/07/04 19:38:52 [debug] 38#0: *3 rewrite phase: 2
+2016/07/04 19:38:52 [debug] 38#0: *3 test location: "/"
+2016/07/04 19:38:52 [debug] 38#0: *3 test location: "latest/meta-data/iam/security-credentials/test-iam-user"
+2016/07/04 19:38:52 [debug] 38#0: *3 using configuration "=/latest/meta-data/iam/security-credentials/test-iam-user"
+2016/07/04 19:38:52 [debug] 38#0: *3 http cl:-1 max:31457280
+2016/07/04 19:38:52 [debug] 38#0: *3 rewrite phase: 4
+2016/07/04 19:38:52 [debug] 38#0: *3 rewrite phase: 5
+2016/07/04 19:38:52 [debug] 38#0: *3 rewrite phase: 6
+2016/07/04 19:38:52 [debug] 38#0: *3 http cleanup add: 00005648A33B2018
+2016/07/04 19:38:52 [debug] 38#0: *3 http script value (post filter): "2016-07-04T19:39:12Z"
+2016/07/04 19:38:52 [debug] 38#0: *3 http script set $expiration
+2016/07/04 19:38:52 [debug] 38#0: *3 http set discard body
+2016/07/04 19:38:52 [debug] 38#0: *3 http script copy: "{
+                          "Code" : "Success",
+                          "LastUpdated" : "2014-11-03T01:56:20Z",
+                          "Type" : "AWS-HMAC",
+                          "AccessKeyId" : "",
+                          "SecretAccessKey" : "",
+                          "Token" : "",
+                          "Expiration" : ""
+2016/07/04 19:38:52 [debug] 38#0: *3 http script var: "2016-07-04T19:39:12Z"
+2016/07/04 19:38:52 [debug] 38#0: *3 http script copy: ""
+                        }"
+2016/07/04 19:38:52 [debug] 38#0: *3 lua capture header filter, uri "/latest/meta-data/iam/security-credentials/test-iam-user"
+2016/07/04 19:38:52 [debug] 38#0: *3 HTTP/1.1 200 OK
+Server: openresty/1.9.7.3
+Date: Mon, 04 Jul 2016 19:38:52 GMT
+Content-Type: text/plain
+Content-Length: 386
+Connection: keep-alive
+
+2016/07/04 19:38:52 [debug] 38#0: *3 write new buf t:1 f:0 00005648A33B26A8, pos 00005648A33B26A8, size: 154 file: 0, size: 0
+2016/07/04 19:38:52 [debug] 38#0: *3 http write filter: l:0 f:0 s:154
+2016/07/04 19:38:52 [debug] 38#0: *3 http output filter "/latest/meta-data/iam/security-credentials/test-iam-user?DurationSeconds=86400"
+2016/07/04 19:38:52 [debug] 38#0: *3 http copy filter: "/latest/meta-data/iam/security-credentials/test-iam-user?DurationSeconds=86400"
+2016/07/04 19:38:52 [debug] 38#0: *3 lua capture body filter, uri "/latest/meta-data/iam/security-credentials/test-iam-user"
+2016/07/04 19:38:52 [debug] 38#0: *3 http postpone filter "/latest/meta-data/iam/security-credentials/test-iam-user?DurationSeconds=86400" 00007FFCC7FF52C0
+2016/07/04 19:38:52 [debug] 38#0: *3 write old buf t:1 f:0 00005648A33B26A8, pos 00005648A33B26A8, size: 154 file: 0, size: 0
+2016/07/04 19:38:52 [debug] 38#0: *3 write new buf t:0 f:0 0000000000000000, pos 00005648A33B2520, size: 386 file: 0, size: 0
+2016/07/04 19:38:52 [debug] 38#0: *3 http write filter: l:1 f:0 s:540
+2016/07/04 19:38:52 [debug] 38#0: *3 http write filter limit 0
+2016/07/04 19:38:52 [debug] 38#0: *3 writev: 540 of 540
+2016/07/04 19:38:52 [debug] 38#0: *3 http write filter 0000000000000000
+2016/07/04 19:38:52 [debug] 38#0: *3 http copy filter: 0 "/latest/meta-data/iam/security-credentials/test-iam-user?DurationSeconds=86400"
+2016/07/04 19:38:52 [debug] 38#0: *3 http finalize request: 0, "/latest/meta-data/iam/security-credentials/test-iam-user?DurationSeconds=86400" a:1, c:1
+2016/07/04 19:38:52 [debug] 38#0: *3 set http keepalive handler
+2016/07/04 19:38:52 [debug] 38#0: *3 http close request
+2016/07/04 19:38:52 [debug] 38#0: *3 lua request cleanup: forcible=0
+2016/07/04 19:38:52 [debug] 38#0: *3 http log handler
+2016/07/04 19:38:52 [debug] 38#0: *3 free: 00005648A33B1120, unused: 24
+2016/07/04 19:38:52 [debug] 38#0: *3 free: 00005648A33B2140, unused: 2211
+2016/07/04 19:38:52 [debug] 38#0: *3 free: 00005648A33B0D00
+2016/07/04 19:38:52 [debug] 38#0: *3 hc free: 0000000000000000 0
+2016/07/04 19:38:52 [debug] 38#0: *3 hc busy: 0000000000000000 0
+2016/07/04 19:38:52 [debug] 38#0: *3 reusable connection: 1
+2016/07/04 19:38:52 [debug] 38#0: *3 event timer add: 12: 68000:1467661200373
+2016/07/04 19:38:52 [debug] 38#0: *3 post event 00005648A33AAB40
+2016/07/04 19:38:52 [debug] 38#0: *3 delete posted event 00005648A33AAB40
+2016/07/04 19:38:52 [debug] 38#0: *3 http keepalive handler
+2016/07/04 19:38:52 [debug] 38#0: *3 malloc: 00005648A33B0D00:1024
+2016/07/04 19:38:52 [debug] 38#0: *3 recv: fd:12 -1 of 1024
+2016/07/04 19:38:52 [debug] 38#0: *3 recv() not ready (11: Resource temporarily unavailable)
+2016/07/04 19:38:52 [debug] 38#0: *3 free: 00005648A33B0D00
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket handler for "/test-with-iam?", wev 0
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket read handler
+2016/07/04 19:38:52 [debug] 38#0: *1 event timer del: 11: 1467661192373
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket read data: wait:1
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket try to recv data 4096: "/test-with-iam?"
+2016/07/04 19:38:52 [debug] 38#0: *1 recv: fd:11 540 of 4096
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket recv returned 540: "/test-with-iam?"
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket read until
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket receive done: wait:1, eof:0, uri:"/test-with-iam?"
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket waking up the current request (read)
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp operation done, resuming lua thread
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket calling prepare retvals handler 00005648A20BE6A0, u:00000000412F1018
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket receive return value handler
+2016/07/04 19:38:52 [debug] 38#0: *1 lua run thread, top:0 c:1
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket calling receive() method
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket read timeout: 60000
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket read data: wait:0
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket read line
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket read the final line part: "Server: openresty/1.9.7.3"
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket receive done: wait:0, eof:0, uri:"/test-with-iam?"
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket receive done in a single run
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket receive return value handler
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket calling receive() method
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket read timeout: 60000
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket read data: wait:0
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket read line
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket read the final line part: "Date: Mon, 04 Jul 2016 19:38:52 GMT"
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket receive done: wait:0, eof:0, uri:"/test-with-iam?"
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket receive done in a single run
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket receive return value handler
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket calling receive() method
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket read timeout: 60000
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket read data: wait:0
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket read line
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket read the final line part: "Content-Type: text/plain"
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket receive done: wait:0, eof:0, uri:"/test-with-iam?"
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket receive done in a single run
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket receive return value handler
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket calling receive() method
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket read timeout: 60000
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket read data: wait:0
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket read line
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket read the final line part: "Content-Length: 386"
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket receive done: wait:0, eof:0, uri:"/test-with-iam?"
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket receive done in a single run
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket receive return value handler
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket calling receive() method
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket read timeout: 60000
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket read data: wait:0
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket read line
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket read the final line part: "Connection: keep-alive"
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket receive done: wait:0, eof:0, uri:"/test-with-iam?"
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket receive done in a single run
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket receive return value handler
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket calling receive() method
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket read timeout: 60000
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket read data: wait:0
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket read line
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket read the final line part: ""
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket receive done: wait:0, eof:0, uri:"/test-with-iam?"
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket receive done in a single run
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket receive return value handler
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket calling receive() method
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket read timeout: 60000
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket read data: wait:0
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket read chunk 386
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket receive done: wait:0, eof:0, uri:"/test-with-iam?"
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket receive done in a single run
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket receive return value handler
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket set keepalive: saving connection 00005648A336DD70
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket clear current socket connection
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket keepalive timeout: 30000 ms
+2016/07/04 19:38:52 [debug] 38#0: *1 event timer add: 11: 30000:1467661162373
+2016/07/04 19:38:52 [debug] 38#0: *1 lua finalize socket
+2016/07/04 19:38:52 [debug] 38#0: *1 lua http cleanup free: 00005648A33AEA00
+2016/07/04 19:38:52 [debug] 38#0: *1 [lua] AWSIAMCredentials.lua:151: fetchSecurityCredentialsFromAWS(): AWS Response:{
+                          "Code" : "Success",
+                          "LastUpdated" : "2014-11-03T01:56:20Z",
+                          "Type" : "AWS-HMAC",
+                          "AccessKeyId" : "",
+                          "SecretAccessKey" : "",
+                          "Token" : "",
+                          "Expiration" : "2016-07-04T19:39:12Z"
+                        }
+2016/07/04 19:38:52 [debug] 38#0: *1 [lua] AwsService.lua:202: getCredentials(): kms uses credentials from:api-gateway.aws.AWSIAMCredentials -> >>  >> 
+2016/07/04 19:38:52 [debug] 38#0: *1 [lua] AwsV4Signature.lua:74: get_hashed_canonical_request(): Canonical String to Sign is:
+POST
+/
+
+host:kms.us-east-1.amazonaws.com
+x-amz-date:20160704T193852Z
+
+host;x-amz-date
+faf1c1afd49ba4d7749b36bbd24f5e51d2ca3bc4096de0f85d28f631b027ba7d
+2016/07/04 19:38:52 [debug] 38#0: *1 [lua] AwsV4Signature.lua:77: get_hashed_canonical_request(): Canonical String HASHED is:
+5eb254927d2caf21eaf1f4ce0a4f090cdc15a0019e7a15d8f1d192b724bfe2f0
+
+2016/07/04 19:38:52 [debug] 38#0: *1 [lua] AwsV4Signature.lua:83: get_string_to_sign(): String-to-Sign is:
+AWS4-HMAC-SHA256
+20160704T193852Z
+20160704/us-east-1/kms/aws4_request
+5eb254927d2caf21eaf1f4ce0a4f090cdc15a0019e7a15d8f1d192b724bfe2f0
+2016/07/04 19:38:52 [debug] 38#0: *1 [lua] AwsService.lua:307: performAction(): Calling AWS:POST https://kms.us-east-1.amazonaws.com:443/. Body={"Action":"ListAliases"}
+2016/07/04 19:38:52 [debug] 38#0: *1 [lua] AwsService.lua:309: performAction(): Calling AWS: Headers:, x-amz-security-token=, X-Amz-Target=TrentService.ListAliases, X-Amz-Date=20160704T193852Z, Content-Type=application/x-amz-json-1.1, Authorization=AWS4-HMAC-SHA256 Credential=/20160704/us-east-1/kms/aws4_request,SignedHeaders=host;x-amz-date,Signature=526d2d48f97d2c6c368da3a4e446f998d2fb68fc15d346d7d637024eea563957, Accept=application/json
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket pool get keepalive peer
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket keepalive connection pool not found
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket connect timeout: 60000
+2016/07/04 19:38:52 [debug] 38#0: *1 lua resume returned 1
+2016/07/04 19:38:52 [debug] 38#0: *1 lua thread yielded
+2016/07/04 19:38:52 [debug] 38#0: *1 lua run thread returned -2
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket resolve handler
+2016/07/04 19:38:52 [debug] 38#0: *1 name was resolved to 54.239.18.42
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp operation done, resuming lua thread
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket calling prepare retvals handler 00005648A20BFEA0, u:0000000040734480
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket resolve retval handler
+2016/07/04 19:38:52 [debug] 38#0: *1 socket 14
+2016/07/04 19:38:52 [debug] 38#0: *1 epoll add connection: fd:14 ev:80002005
+2016/07/04 19:38:52 [debug] 38#0: *1 connect to 54.239.18.42:443, fd:14 #5
+2016/07/04 19:38:52 [debug] 38#0: *1 lua http cleanup reuse: 00005648A33AEA00
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket connect: -2
+2016/07/04 19:38:52 [debug] 38#0: *1 posix_memalign: 00005648A33A71E0:128 @16
+2016/07/04 19:38:52 [debug] 38#0: *1 event timer add: 14: 60000:1467661192376
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket handler for "/test-with-iam?", wev 1
+2016/07/04 19:38:52 [debug] 38#0: *1 event timer del: 14: 1467661192376
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket connected
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket waking up the current request (conn)
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp operation done, resuming lua thread
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket calling prepare retvals handler 00005648A20BE5F0, u:0000000040734480
+2016/07/04 19:38:52 [debug] 38#0: *1 lua run thread, top:0 c:1
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket ssl handshake
+2016/07/04 19:38:52 [debug] 38#0: *1 malloc: 00005648A33B1EA0:72
+2016/07/04 19:38:52 [debug] 38#0: *1 lua ssl server name: "kms.us-east-1.amazonaws.com"
+2016/07/04 19:38:52 [debug] 38#0: *1 SSL_do_handshake: -1
+2016/07/04 19:38:52 [debug] 38#0: *1 SSL_get_error: 2
+2016/07/04 19:38:52 [debug] 38#0: *1 event timer add: 14: 60000:1467661192466
+2016/07/04 19:38:52 [debug] 38#0: *1 lua resume returned 1
+2016/07/04 19:38:52 [debug] 38#0: *1 lua thread yielded
+2016/07/04 19:38:52 [debug] 38#0: *1 lua run thread returned -2
+2016/07/04 19:38:52 [debug] 38#0: *1 SSL handshake handler: 0
+2016/07/04 19:38:52 [debug] 38#0: *1 SSL_do_handshake: -1
+2016/07/04 19:38:52 [debug] 38#0: *1 SSL_get_error: 2
+2016/07/04 19:38:52 [debug] 38#0: *1 SSL handshake handler: 1
+2016/07/04 19:38:52 [debug] 38#0: *1 SSL_do_handshake: -1
+2016/07/04 19:38:52 [debug] 38#0: *1 SSL_get_error: 2
+2016/07/04 19:38:52 [debug] 38#0: *1 SSL handshake handler: 0
+2016/07/04 19:38:52 [debug] 38#0: *1 SSL_do_handshake: 1
+2016/07/04 19:38:52 [debug] 38#0: *1 SSL: TLSv1.2, cipher: "ECDHE-RSA-AES256-GCM-SHA384 TLSv1.2 Kx=ECDH Au=RSA Enc=AESGCM(256) Mac=AEAD"
+2016/07/04 19:38:52 [debug] 38#0: *1 event timer del: 14: 1467661192466
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket waking up the current request (conn)
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp operation done, resuming lua thread
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket calling prepare retvals handler 00005648A20BB970, u:0000000040734480
+2016/07/04 19:38:52 [debug] 38#0: *1 lua ssl save session: 00005648A33C5260:2
+2016/07/04 19:38:52 [debug] 38#0: *1 lua run thread, top:0 c:1
+2016/07/04 19:38:52 [debug] 38#0: *1 [lua] http.lua:542: send_request(): 
+POST / HTTP/1.1
+Host: kms.us-east-1.amazonaws.com
+Accept: application/json
+Content-Type: application/x-amz-json-1.1
+Content-Length: 24
+x-amz-security-token: 
+X-Amz-Target: TrentService.ListAliases
+User-Agent: lua-resty-http/0.07 (Lua) ngx_lua/10000
+Authorization: AWS4-HMAC-SHA256 Credential=/20160704/us-east-1/kms/aws4_request,SignedHeaders=host;x-amz-date,Signature=526d2d48f97d2c6c368da3a4e446f998d2fb68fc15d346d7d637024eea563957
+X-Amz-Date: 20160704T193852Z
+
+
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket send timeout: 60000
+2016/07/04 19:38:52 [debug] 38#0: *1 lua reuse free buf chain, but reallocate memory because 475 >= 199, cl:00005648A33AEA18, p:00005648A33AEFA8
+2016/07/04 19:38:52 [debug] 38#0: *1 lua socket tcp_nodelay
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket send data
+2016/07/04 19:38:52 [debug] 38#0: *1 SSL to write: 475
+2016/07/04 19:38:52 [debug] 38#0: *1 SSL_write: 475
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket sent all the data
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket send timeout: 60000
+2016/07/04 19:38:52 [debug] 38#0: *1 lua reuse free buf memory 475 >= 24, cl:00005648A33AEA18, p:00005648A33AF150
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket send data
+2016/07/04 19:38:52 [debug] 38#0: *1 SSL to write: 24
+2016/07/04 19:38:52 [debug] 38#0: *1 SSL_write: 24
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket sent all the data
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket calling receive() method
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket read timeout: 60000
+2016/07/04 19:38:52 [debug] 38#0: *1 lua reuse free buf memory 4096 >= 4096, cl:00005648A33AEA28, p:00005648A33AFAA0
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket read data: wait:0
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket try to recv data 4096: "/test-with-iam?"
+2016/07/04 19:38:52 [debug] 38#0: *1 SSL_read: -1
+2016/07/04 19:38:52 [debug] 38#0: *1 SSL_get_error: 2
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket recv returned -2: "/test-with-iam?"
+2016/07/04 19:38:52 [debug] 38#0: *1 event timer add: 14: 60000:1467661192788
+2016/07/04 19:38:52 [debug] 38#0: *1 lua resume returned 1
+2016/07/04 19:38:52 [debug] 38#0: *1 lua thread yielded
+2016/07/04 19:38:52 [debug] 38#0: *1 lua run thread returned -2
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket handler for "/test-with-iam?", wev 1
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket dummy handler
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket handler for "/test-with-iam?", wev 0
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket read handler
+2016/07/04 19:38:52 [debug] 38#0: *1 event timer del: 14: 1467661192788
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket read data: wait:1
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket try to recv data 4096: "/test-with-iam?"
+2016/07/04 19:38:52 [debug] 38#0: *1 SSL_read: 331
+2016/07/04 19:38:52 [debug] 38#0: *1 SSL_read: -1
+2016/07/04 19:38:52 [debug] 38#0: *1 SSL_get_error: 2
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket recv returned 331: "/test-with-iam?"
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket read line
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket read the final line part: "HTTP/1.1 400 Bad Request"
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket receive done: wait:1, eof:0, uri:"/test-with-iam?"
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket waking up the current request (read)
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp operation done, resuming lua thread
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket calling prepare retvals handler 00005648A20BE6A0, u:0000000040734480
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket receive return value handler
+2016/07/04 19:38:52 [debug] 38#0: *1 lua run thread, top:0 c:1
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket calling receive() method
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket read timeout: 60000
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket read data: wait:0
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket read line
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket read the final line part: "Server: Server"
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket receive done: wait:0, eof:0, uri:"/test-with-iam?"
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket receive done in a single run
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket receive return value handler
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket calling receive() method
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket read timeout: 60000
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket read data: wait:0
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket read line
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket read the final line part: "Date: Mon, 04 Jul 2016 19:38:52 GMT"
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket receive done: wait:0, eof:0, uri:"/test-with-iam?"
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket receive done in a single run
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket receive return value handler
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket calling receive() method
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket read timeout: 60000
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket read data: wait:0
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket read line
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket read the final line part: "Content-Type: application/x-amz-json-1.1"
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket receive done: wait:0, eof:0, uri:"/test-with-iam?"
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket receive done in a single run
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket receive return value handler
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket calling receive() method
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket read timeout: 60000
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket read data: wait:0
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket read line
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket read the final line part: "Content-Length: 107"
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket receive done: wait:0, eof:0, uri:"/test-with-iam?"
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket receive done in a single run
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket receive return value handler
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket calling receive() method
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket read timeout: 60000
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket read data: wait:0
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket read line
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket read the final line part: "Connection: keep-alive"
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket receive done: wait:0, eof:0, uri:"/test-with-iam?"
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket receive done in a single run
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket receive return value handler
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket calling receive() method
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket read timeout: 60000
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket read data: wait:0
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket read line
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket read the final line part: "x-amzn-RequestId: f03c8910-421e-11e6-974f-13ef6e62c2df"
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket receive done: wait:0, eof:0, uri:"/test-with-iam?"
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket receive done in a single run
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket receive return value handler
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket calling receive() method
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket read timeout: 60000
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket read data: wait:0
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket read line
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket read the final line part: ""
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket receive done: wait:0, eof:0, uri:"/test-with-iam?"
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket receive done in a single run
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket receive return value handler
+2016/07/04 19:38:52 [debug] 38#0: *1 lua resume returned 1
+2016/07/04 19:38:52 [debug] 38#0: *1 lua thread yielded
+2016/07/04 19:38:52 [debug] 38#0: *1 lua coroutine: resume
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket calling receive() method
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket read timeout: 60000
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket read data: wait:0
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket read chunk 107
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket receive done: wait:0, eof:0, uri:"/test-with-iam?"
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket receive done in a single run
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket receive return value handler
+2016/07/04 19:38:52 [debug] 38#0: *1 lua resume returned 1
+2016/07/04 19:38:52 [debug] 38#0: *1 lua thread yielded
+2016/07/04 19:38:52 [debug] 38#0: *1 lua coroutine: yield
+2016/07/04 19:38:52 [debug] 38#0: *1 lua resume returned 1
+2016/07/04 19:38:52 [debug] 38#0: *1 lua thread yielded
+2016/07/04 19:38:52 [debug] 38#0: *1 lua coroutine: resume
+2016/07/04 19:38:52 [debug] 38#0: *1 lua resume returned 0
+2016/07/04 19:38:52 [debug] 38#0: *1 lua light thread ended normally
+2016/07/04 19:38:52 [debug] 38#0: *1 lua coroutine: lua user thread ended normally
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket set keepalive: saving connection 00005648A336DFF8
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket connection pool size: 30
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket keepalive create connection pool for key "kms.us-east-1.amazonaws.com:443"
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket clear current socket connection
+2016/07/04 19:38:52 [debug] 38#0: *1 lua tcp socket keepalive timeout: 60000 ms
+2016/07/04 19:38:52 [debug] 38#0: *1 event timer add: 14: 60000:1467661192881
+2016/07/04 19:38:52 [debug] 38#0: *1 lua finalize socket
+2016/07/04 19:38:52 [debug] 38#0: *1 lua http cleanup free: 00005648A33AEA00
+2016/07/04 19:38:52 [debug] 38#0: *1 [lua] AwsService.lua:328: performAction(): AWS Response:code=400, headers=, Content-Length=107, Connection=keep-alive, Date=Mon, 04 Jul 2016 19:38:52 GMT, Content-Type=application/x-amz-json-1.1, x-amzn-RequestId=f03c8910-421e-11e6-974f-13ef6e62c2df, Server=Server, status=400, body={"__type":"UnrecognizedClientException","message":"The security token included in the request is invalid."}
+2016/07/04 19:38:52 [debug] 38#0: *1 lua resume returned 2
+2016/07/04 19:38:52 [error] 38#0: *1 lua entry thread aborted: runtime error: content_by_lua(nginx.conf:116):15: ListAliases should return at least 1 key
+stack traceback:
+coroutine 0:
+	[C]: in function 'assert'
+	content_by_lua(nginx.conf:116):15: in function <content_by_lua(nginx.conf:116):1>, client: 127.0.0.1, server: localhost, request: "GET /test-with-iam HTTP/1.1", host: "localhost"
+2016/07/04 19:38:52 [debug] 38#0: *1 lua request cleanup: forcible=0
+2016/07/04 19:38:52 [debug] 38#0: *1 lua run thread returned 500
+2016/07/04 19:38:52 [debug] 38#0: *1 http finalize request: 500, "/test-with-iam?" a:1, c:1
+2016/07/04 19:38:52 [debug] 38#0: *1 http special response: 500, "/test-with-iam?"
+2016/07/04 19:38:52 [debug] 38#0: *1 http set discard body
+2016/07/04 19:38:52 [debug] 38#0: *1 lua capture header filter, uri "/test-with-iam"
+2016/07/04 19:38:52 [debug] 38#0: *1 HTTP/1.1 500 Internal Server Error
+Server: openresty/1.9.7.3
+Date: Mon, 04 Jul 2016 19:38:52 GMT
+Content-Type: text/html
+Content-Length: 198
+Connection: close
+
+2016/07/04 19:38:52 [debug] 38#0: *1 write new buf t:1 f:0 00005648A33AF6F8, pos 00005648A33AF6F8, size: 167 file: 0, size: 0
+2016/07/04 19:38:52 [debug] 38#0: *1 http write filter: l:0 f:0 s:167
+2016/07/04 19:38:52 [debug] 38#0: *1 http output filter "/test-with-iam?"
+2016/07/04 19:38:52 [debug] 38#0: *1 http copy filter: "/test-with-iam?"
+2016/07/04 19:38:52 [debug] 38#0: *1 lua capture body filter, uri "/test-with-iam"
+2016/07/04 19:38:52 [debug] 38#0: *1 http postpone filter "/test-with-iam?" 00005648A33AF8C8
+2016/07/04 19:38:52 [debug] 38#0: *1 write old buf t:1 f:0 00005648A33AF6F8, pos 00005648A33AF6F8, size: 167 file: 0, size: 0
+2016/07/04 19:38:52 [debug] 38#0: *1 write new buf t:0 f:0 0000000000000000, pos 00005648A2378A00, size: 140 file: 0, size: 0
+2016/07/04 19:38:52 [debug] 38#0: *1 write new buf t:0 f:0 0000000000000000, pos 00005648A2379BC0, size: 58 file: 0, size: 0
+2016/07/04 19:38:52 [debug] 38#0: *1 http write filter: l:1 f:0 s:365
+2016/07/04 19:38:52 [debug] 38#0: *1 http write filter limit 0
+2016/07/04 19:38:52 [debug] 38#0: *1 writev: 365 of 365
+2016/07/04 19:38:52 [debug] 38#0: *1 http write filter 0000000000000000
+2016/07/04 19:38:52 [debug] 38#0: *1 http copy filter: 0 "/test-with-iam?"
+2016/07/04 19:38:52 [debug] 38#0: *1 http finalize request: 0, "/test-with-iam?" a:1, c:1
+2016/07/04 19:38:52 [debug] 38#0: *1 event timer add: 10: 5000:1467661137881
+2016/07/04 19:38:52 [debug] 38#0: *1 http lingering close handler
+2016/07/04 19:38:52 [debug] 38#0: *1 recv: fd:10 -1 of 4096
+2016/07/04 19:38:52 [debug] 38#0: *1 recv() not ready (11: Resource temporarily unavailable)
+2016/07/04 19:38:52 [debug] 38#0: *1 lingering read: -2
+2016/07/04 19:38:52 [debug] 38#0: *1 event timer: 10, old: 1467661137881, new: 1467661137881
+2016/07/04 19:38:52 [debug] 38#0: *1 http lingering close handler
+2016/07/04 19:38:52 [debug] 38#0: *1 recv: fd:10 0 of 4096
+2016/07/04 19:38:52 [debug] 38#0: *1 lingering read: 0
+2016/07/04 19:38:52 [debug] 38#0: *1 http request count:1 blk:0
+2016/07/04 19:38:52 [debug] 38#0: *1 http close request
+2016/07/04 19:38:52 [debug] 38#0: *1 http log handler
+2016/07/04 19:38:52 [debug] 38#0: *1 free: 00005648A33AFAA0
+2016/07/04 19:38:52 [debug] 38#0: *1 free: 00005648A33ADA60, unused: 8
+2016/07/04 19:38:52 [debug] 38#0: *1 free: 00005648A33AEA80, unused: 253
+2016/07/04 19:38:52 [debug] 38#0: *1 close http connection: 10
+2016/07/04 19:38:52 [debug] 38#0: *1 event timer del: 10: 1467661137881
+2016/07/04 19:38:52 [debug] 38#0: *1 reusable connection: 0
+2016/07/04 19:38:52 [debug] 38#0: *1 free: 00005648A33A6DC0
+2016/07/04 19:38:52 [debug] 38#0: *1 free: 00005648A33711E0, unused: 24
+2016/07/04 19:38:52 [debug] 38#0: *1 free: 00005648A33A7320, unused: 72
+2016/07/04 19:38:53 [debug] 38#0: epoll del event: fd:8 op:2 ev:00000000
